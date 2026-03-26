@@ -1,0 +1,46 @@
+Issue with Previously Raised Ticket Not Yet Resolved
+ 
+454: Critical Prod Issue (All Prod Servers (Dev,QA,PROD))   
+Issue: 
+-- When attempting to download a document in Effective, Retired, or Archived stages, the document is downloaded in A4 format instead of A3, even though A3 was selected during document creation. (But in Draft 0.1 i m Getting as expected.) and 
+-- When attempting to print documents from the Print Event section, the printing process takes significantly longer than expected (e.g., printing 60 pages takes approximately 4 minutes).
+ 
+423: Audit Trail Print Package: 
+Issue: 
+As mentioned in Point 4 Below, the package version is not being updated or captured correctly in the Audit Trail.
+ 
+-------------------------------------------------------------------------------------------------------------------------------
+ 
+Reoccurred Bugs: 2(Partially), 3, and 5
+Newly Introduced Bug: 1 and 4.
+ 
+1. Issue with Printing Documents in Print Events:
+When printing documents, multiple documents are merged and sent for printing. During this process, if the application is refreshed, only one or two documents are printed while the remaining documents stay in a "Not Printed" state. The printing process should continue to run in the background even after a refresh, ensuring that all documents are successfully sent to the printer.
+ 
+Current Impact: As of now, the Print All button gets stuck, and users are unable to print or reprint the documents again.
+ 
+ 
+2. Print Event should update dynamically only for unprinted documents and remain unchanged for printed documents.
+A package is created with Main and Asst-1 documents and is associated with a Print Event. In the Print Event, both Main and Asst-1 documents are displayed.
+Adding Document
+•	If the Print Event are already in a Printed state, adding a new document (e.g., Asst-2) to the package should not update or reflect in the existing Print Event but it should update in Package Section. The Print Event should remain unchanged.
+•	If the documents are not yet printed, then adding a new document (e.g., Asst-2) to the package can be reflected in the Print Event, which is acceptable.
+Remove Condition:
+•	If a document is removed from the package:
+o	If Print event is not printed Status, it should be removed from the Print Event.
+o	If it is already printed, it should remain unchanged in the Print Event.
+Current Impact:
+Newly added documents are getting included in the Printed event, which is incorrect. Additionally, documents are not being removed from the Print Event even when they are in a Not Printed state.
+ 
+3. Once the Print Event reaches Printed status, the Remove Package button should be disabled.
+Current Impact:
+Currently, users are able to remove packages even after the Print Event is in Printed status.
+ 
+4. Package Version Not Updating in Package and Audit Trail
+When a document is revised (e.g from version 1.0 to 2.0), the Doc version change is captured in the Audit Trail at the document level. However, the corresponding Package version is not updated or captured either in the Audit Trail or in the Package Version section within the Package module.
+ 
+5. Package Document Type Should Restrict Selection to Effective Documents Only
+In the Package Document Type section, the system should allow selection of only Effective documents. Selection of Draft, Retired and Archived documents should be restricted.
+ 
+Current Impact:
+Currently, users can select Draft Retired and Archived documents, which may lead to the use of invalid or outdated documents, causing compliance and data integrity issues.
