@@ -1,3 +1,23 @@
+10.20.10.155:5001/api/sap/test-response
+{
+  "url": "https://SAPHANADEV.TENSHI.CO.IN/sap/opu/odata/sap/ZODS_PRC_ORDER_DUMP_SRV/Et_ProcessOrderSet",
+  "method": "GET",
+  "queryParams": {
+    "$filter": "Plant_code eq '1218' and CreationDate ge '20250219' and CreationDate le '20260219' and ProcessOrderNumber='450000001017'",
+    "$format": "json"
+  },
+  "headers": {
+    "Accept": "application/json",
+    "x-csrf-token": "Fetch"
+  },
+  "username": "103445",
+  "password": "Arcolab2026"
+}
+
+
+
+
+
 Issue with Previously Raised Ticket Not Yet Resolved
  
 454: Critical Prod Issue (All Prod Servers (Dev,QA,PROD))   
