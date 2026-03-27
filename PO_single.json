@@ -1,0 +1,34 @@
+{
+    "d": {
+        "results": [
+            {
+                "__metadata": {
+                    "id": "https://susedev.tenshi.int:8443/sap/opu/odata/sap/ZODS_PRC_ORDER_DUMP_SRV/Et_ProcessOrderSet(CreationDate='20250218',ProcessOrderNumber='450000001016')",
+                    "uri": "https://susedev.tenshi.int:8443/sap/opu/odata/sap/ZODS_PRC_ORDER_DUMP_SRV/Et_ProcessOrderSet(CreationDate='20250218',ProcessOrderNumber='450000001016')",
+                    "type": "ZODS_PRC_ORDER_DUMP_SRV.Et_ProcessOrder"
+                },
+                "CreationDate": "20250218",
+                "ProcessOrderNumber": "450000001016",
+                "Order_type": "ZP03",
+                "Plant_code": "1216",
+                "Product_code": "000000001700000112",
+                "Description": "",
+                "Brand_name": "",
+                "Batch_no": "5300047",
+                "Batch_size": "100.000 ",
+                "Shelf_life_months": "24 ",
+                "Sales_order_no": "",
+                "Sales_order_date": "00000000",
+                "Order_quantity": "0.000 ",
+                "Customer_name": "",
+                "Pack": "",
+                "Drug_license_no": "",
+                "Valid_to": "00000000",
+                "BOM_no": "00000273/R01",
+                "MFR_ref_no": "",
+                "MPR_ref_no": "",
+                "Suit": ""
+            }
+        ]
+    }
+}
