@@ -1,3 +1,73 @@
+Print Order (Print all and Additional Print All) adn Water mark should same as before
+
+You have:
+
+Main Document – 2 pages
+
+Asst1 Document – 3 pages
+
+Asst2 Document – 2 pages
+
+When the user clicks Print All(in print event), the system should automatically generate cover pages before each document.
+
+Correct Printing Sequence
+
+Page 1 → Cover Page for Main Document
+
+Page 2–3 → Main Document (2 pages)
+
+Page 4 → Cover Page for Asst1
+
+Page 5–7 → Asst1 Document (3 pages)
+
+Page 8 → Cover Page for Asst2
+
+Page 9–10 → Asst2 Document (2 pages)
+
+Logical Flow
+
+When Print All is triggered:
+
+For each document in documentList, Generate Cover Page (with metadata of that document).
+
+Cover Page Content (Dynamic)
+
+Each cover page should display the metadata of that specific document, such as:
+
+Document Name
+
+Document Number
+
+Version
+
+Effective Date
+
+Etc as per below Image Format
+
+
+
+Example Output
+
+[Cover - Main]
+Main Page 1
+Main Page 2
+
+[Cover - Asst1]
+Asst1 Page 1
+Asst1 Page 2
+Asst1 Page 3
+
+[Cover - Asst2]
+Asst2 Page 1
+Asst2 Page 2
+
+– In main cover page there it should capture Coverage Page No also Ex: Main 12+ Coverage may be 1 or 2 (Dynamic) =Total
+
+Note: In Individual Additional Print, Should have First Page as Cover page and From Next Page Document (Water mark Should have). 
+
+
+
+
 https://help.sap.com/docs/SAP_S4HANA_CLOUD/d35113ee62644d3abee1aaec148291d9/091b4556227a4b31a821bd07008dde4c.html
 
 10.20.10.155:5001/api/sap/test-response
