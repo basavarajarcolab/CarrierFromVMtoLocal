@@ -1,20 +1,20 @@
-Muruli M
-created
-BMR-01 v0.1
-13/04/2026 17:28
+The system shall enforce password policies based on the Active Directory (AD) configuration when users authenticate via LDAP or Single Sign-On (SSO). This ensures that password rules (such as complexity, expiration, and history) are consistent with the organization's centralized identity management policies and reduces the need for duplicate policy management within the application.
 
+Acceptance Criteria
 
-Jayanth 
-created
-SOP-4 v0.1
-13/04/2026 17:14
+For users logging in via LDAP or SSO, the system shall retrieve and enforce the password policy defined in the integrated Active Directory (AD).
 
-Muruli M
-created
-SOP-3 v0.1
-13/04/2026 17:14
+The password policy enforced shall include, but is not limited to:
 
-Muruli M
-created
-SOP-1 v0.1
-13/04/2026 17:13
+Minimum and maximum password length
+
+Complexity rules (e.g., uppercase, lowercase, numeric, special characters)
+
+Password expiration time
+
+Password reuse restrictions (history)
+
+The system shall not allow local override of the AD password policy for LDAP/SSO users.
+
+The system shall display meaningful error messages when a user attempts to change their password in a way that violates the AD policy.
+
